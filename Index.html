@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Aventura da Floresta Misteriosa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela de capa -->
+  <div id="capa">
+    <h1>🌳 A Aventura da Floresta Misteriosa 🌳</h1>
+    <p>Encontre o tesouro escondido e faça as escolhas certas!</p>
+    <button onclick="iniciarJogo()">Iniciar Aventura</button>
+  </div>
+
+  <!-- Jogo -->
+  <div id="jogo" style="display: none;">
+
+    <div id="passo1">
+      <h2>Você chegou à entrada da floresta.</h2>
+      <p>Qual caminho deseja seguir?</p>
+
+      <button onclick="escolha('esquerda')">🌲 Caminho da Esquerda</button>
+      <button onclick="escolha('direita')">🌞 Caminho da Direita</button>
+    </div>
+
+    <div id="resultado"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
